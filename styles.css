@@ -30,3 +30,15 @@ main,section,.hero2,.hero2-copy,.proof-row,.work,.project,.project-copy{min-widt
   .proof-row span{min-width:0}
   .hero2-copy>p{max-width:100%;overflow-wrap:break-word}
 }
+
+.hero2-copy{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:clamp(34px,7vw,110px);align-items:center}
+.hero2-message{min-width:0}.hero2-message h1{max-width:9.6ch}.hero-command{border:1px solid var(--ink);background:#f9f8f3;padding:0;max-width:430px;justify-self:end;width:100%}
+.hero-command-top,.hero-command-foot{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font:500 10px var(--mono);letter-spacing:.04em}
+.hero-command-top{border-bottom:1px solid var(--line)}.hero-command>p{font:400 30px/1 var(--serif);margin:0;padding:24px 14px 16px}
+.hero-command>button{display:block;width:100%;text-align:left;border:0;border-top:1px solid var(--line);background:transparent;padding:13px 14px;font-size:13px;cursor:pointer}
+.hero-command>button:hover{background:#ece9df}.hero-command-foot{border-top:1px solid var(--line);color:var(--muted)}.hero-command-foot i{width:7px;height:7px;background:var(--accent);border-radius:50%}
+@media(max-width:900px){.hero2-copy{grid-template-columns:1fr}.hero-command{justify-self:start;max-width:560px}}
+@media(max-width:620px){.hero-command{margin-top:12px}.hero-command>p{font-size:25px}.hero-command>button{font-size:12px}}
+
+.hero2-message>p{font-size:clamp(18px,1.45vw,24px);line-height:1.45;max-width:52ch;margin:30px 0 0;color:#34332f}
+@media(max-width:620px){.hero2-message>p{font-size:17px;max-width:100%;overflow-wrap:break-word}}

@@ -13,7 +13,7 @@ const input=document.querySelector("#ask-input");
 const answer=document.querySelector("#ask-answer");
 function openAsk(){if(!overlay)return;overlay.hidden=false;overlay.setAttribute("aria-hidden","false");setTimeout(()=>input&&input.focus(),40)}
 function closeAsk(){if(!overlay)return;overlay.hidden=true;overlay.setAttribute("aria-hidden","true")}
-document.querySelectorAll("[data-open-ask]").forEach(b=>b.addEventListener("click",openAsk));
+document.querySelectorAll("[data-open-ask]").forEach(b=>b.addEventListener("click",()=>{openAsk();const q=b.dataset.prefill;if(q){if(input)input.value=b.textContent.replace(/^→\s*/,"");answerQuestion(q)}}));
 document.querySelectorAll("[data-close-ask]").forEach(b=>b.addEventListener("click",closeAsk));
 if(overlay)overlay.addEventListener("click",e=>{if(e.target===overlay)closeAsk()});
 document.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"){e.preventDefault();openAsk()}if(e.key==="Escape")closeAsk()});
