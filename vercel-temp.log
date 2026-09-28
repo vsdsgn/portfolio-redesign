@@ -1,0 +1,18 @@
+Vercel CLI 59.10.0 (Node.js 22.23.2)
+> Not authenticated. Deploying anonymously.
+WARNING! Build not running on Vercel. System environment variables will not be available.
+Build Completed in .vercel/output [27ms]
+Deploying anonymous/prj_9E8XcvI7HHCjynmAhnSNxL5oZqBp
+Uploading [--------------------] (0.0B/91KB)
+Uploading [=====---------------] (26.2KB/91KB)
+Uploading [===========---------] (53.6KB/91KB)
+Uploading [===============-----] (69.6KB/91KB)
+Uploading [====================] (91.0KB/91KB)
+Building…
+Completing…
+
+▲ Temporary       https://temporary-racing-alder-jzfdkb9.vercel.app
+https://temporary-racing-alder-jzfdkb9.vercel.app
+> This deployment expires in 60 minutes. Claim it to keep it live (don't share this link): https://vercel.com/claim-deployment?code=50dbd8ce-bbd6-446c-b8f3-53e539db19e1
+
+✓ Ready in 3s
